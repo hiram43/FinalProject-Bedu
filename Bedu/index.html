@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="JavaScript.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- Nav bar start-->
+    <ul>
+        <li><a class="active" href="https://coronavirus.gob.mx/datos/" target="_blank">Covid-México</a></li>
+        <li><a href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019?gclid=Cj0KCQjwpZT5BRCdARIsAGEX0zkV0D-VA4ObUt8AOfUliF6WcT_-yN4DcAwnjRqO6WtevwxN5vzhUQUaAjpWEALw_wcB" target="_blank">Noticias</a></li>
+        <li><a href="https://www.marca.com/claro-mx/trending/2020/05/02/5eaca221ca47414f428b45cb.html" target="_blank">Posibles Vacunas</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    <!--Nav Bar end-->
+    <!--Video Section-->
+    <div class="flex-container">
+        <div class="videoM"><iframe width="430" height="400" src="https://www.youtube.com/embed/XPNctD-lrAY" frameborder="0" allowfullscreen></iframe><span class="label success">informate</span> </div>
+        <div class="videoM"><iframe width="430" height="400" src="https://www.youtube.com/embed/FcLDWpVW0so" frameborder="0" allowfullscreen></iframe> <span class="label info">Indicaciones</span></div>
+        <div class="videoM"><iframe width="430" height="400" src="https://www.youtube.com/embed/fpi7B6Z2sF0" frameborder="0" allowfullscreen></iframe> <span class="label warning">cuidate</span></div>
+    </div>
+    <!--End Video Section-->
+    <!-- Date Section-->
+    <div id="fecha">
+        
+    </div>
+
+    <!--End Date Section-->
+
+
+    <!-- Api Call-->
+    <div id="ApiCall">
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Infectados</th>
+                <th scope="col">Muertos</th>
+               
+              </tr>
+            </thead>
+            <tbody id="Ciudad">
+
+              
+            </tbody>
+          </table>
+    </div>
+    <!--End API call-->
+    
+</body>
+</html>
